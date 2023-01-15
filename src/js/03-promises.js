@@ -23,8 +23,8 @@ function handleSubmit(event) {
 
 
   for(let i=0; i<amount; i++){
-    position = i+1;
-    delay = firstDelay + delayStep * i;
+    const position = i+1;
+    const delay = firstDelay + delayStep * i;
 
     createPromise(position, delay)
   .then(({ position, delay }) => {
